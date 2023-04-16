@@ -1,0 +1,17 @@
+configure setup:
+    cd ~/foxy_ws
+    foxy
+    source install/setup.bash
+    
+Run:
+To start the simulation of the robot:
+   ros2 launch roland launch_sim.launch.py
+   
+Build in ROS2:
+
+colcon build --symlink-install
+
+
+
+
+ros2 launch roland launch_sim.launch.py world:=./src/roland/worlds/obstacles.world
